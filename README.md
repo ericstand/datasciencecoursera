@@ -1,4 +1,4 @@
 datasciencecoursera
 ===================
 
-As required by Data Science Toolkit class project.
+As required by Data Science Toolkit course project.
