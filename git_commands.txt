@@ -31,3 +31,8 @@ $ git commit
 ## Every time you perform a commit, 
 ## you’re recording a snapshot of your project that you can revert to 
 ## or compare to later.
+
+## to skip the staging ($ git add filename) step,
+## you can use the -a option on git commit
+$ git commit -a -m "skip staging, committing directly for working dir."
+## this is faster by saving a step.
