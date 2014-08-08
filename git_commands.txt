@@ -1,20 +1,32 @@
+## this info came from here
+
+	http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
+
 ## Start tracking a project
-$ git init
+
+	$ git init
+
 ## creates a .git directory in the current directory
 ## this now is your 'working directory' since it contains the .git directory
 
 ## To see what files are tracking and untracked in your working directory
-$ git status
+
+	$ git status
+
 ##  untracked means Git sees a file that was not in the last snapshot (commit)
 ## Git does not track such a file until you tell it to do so with an 'add'.
 
 ## To begin tracking a file
-$ git add <filename>
+
+	$ git add <filename>
+
 ## this adds it to the tracking list and stages it as part of an index
 ## the file is staged, ready to be commit to the repository.
 
 ## Use this to see what files have been staged ready for commit to repo
-$ git diff -staged
+
+	$ git diff -staged
+
 ## it's hard to read 
 
 ## once you're happy with what has beed added and staged, you can commit
@@ -22,10 +34,10 @@ $ git diff -staged
 ## this commit..they just sit as modified files unitl you 'add' them
 ## to the staging area from your working area.
 
-$ git commit
+	$ git commit
 
 ## commits the files that were staged
-## Remember that the commit records the snapshot you set up in your staging area.
+## Remember the commit records the snapshot you set up in your staging area.
 ## Anything you didn’t stage is still sitting there modified; 
 ## you can do another commit to add it to your history. 
 ## Every time you perform a commit, 
@@ -34,14 +46,43 @@ $ git commit
 
 ## to skip the staging ($ git add filename) step,
 ## you can use the -a option on git commit
-$ git commit -a -m "skip staging, committing directly for working dir."
+
+	$ git commit -a -m "skip staging, committing directly for working dir."
+
 ## this is faster by saving a step.
 
-## if you are going to remove a file ($ rm filename)
+## if you are going to remove a file (	$ rm filename)
 ## it will not show in the working directory, 
 ## but it's still in the stating area if you had it tracked
-## with an earlier add ($ git add filename)
+## with an earlier add (	$ git add filename)
 ## The git status shows it as deleted: filename
 ## until you run a 
-$ git rm filename
+
+	$ git rm filename
+
 ## to remove it from staging
+
+## to see a log of all the changes and associated -m messages
+
+	$ git log
+
+## to show commits made in that repo in reverse order
+
+## to manage to a remote repository, need to add it with a name
+## default name Git gives to the server you link to is 'origin', let use it:
+
+   $ git remote add origin https://github.com/ericstand/datasciencecoursera.git
+
+## this points my local .git repository to the remote GitHub one that i made
+
+## to tell what remote repositories you are pointing to,
+## you can get a list of names
+
+	$ git remote
+
+## which can be extended in detail with a -v option
+
+##
+## the following refernece would be good to check
+## when working with GitHub as the remote repository
+help.gethub.com
