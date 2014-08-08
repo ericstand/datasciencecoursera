@@ -12,3 +12,14 @@ $ git status
 $ git add <filename>
 ## this adds it to the tracking list and stages it as part of an index
 ## the file is staged, ready to be commit to the repository.
+
+## Use this to see what files have been staged ready for commit to repo
+$ git diff -staged
+## it's hard to read 
+
+## once you're happy with what has beed added and staged, you can commit
+## your changes. files that were not 'add'ed since last edit won't go in 
+## this commit..they just sit as modified files unitl you 'add' them
+## to the staging area from your working area.
+$ git commit
+## commits the files that were staged
