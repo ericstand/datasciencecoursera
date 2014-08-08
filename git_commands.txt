@@ -1,0 +1,14 @@
+## Start tracking a project
+$ git init
+## creates a .git directory in the current directory
+## this now is your 'working directory' since it contains the .git directory
+
+## To see what files are tracking and untracked in your working directory
+$ git status
+##  untracked means Git sees a file that was not in the last snapshot (commit)
+## Git does not track such a file until you tell it to do so with an 'add'.
+
+## To begin tracking a file
+$ git add <filename>
+## this adds it to the tracking list and stages it as part of an index
+## the file is staged, ready to be commit to the repository.
