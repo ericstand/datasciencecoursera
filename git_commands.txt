@@ -21,5 +21,13 @@ $ git diff -staged
 ## your changes. files that were not 'add'ed since last edit won't go in 
 ## this commit..they just sit as modified files unitl you 'add' them
 ## to the staging area from your working area.
+
 $ git commit
+
 ## commits the files that were staged
+## Remember that the commit records the snapshot you set up in your staging area.
+## Anything you didn’t stage is still sitting there modified; 
+## you can do another commit to add it to your history. 
+## Every time you perform a commit, 
+## you’re recording a snapshot of your project that you can revert to 
+## or compare to later.
