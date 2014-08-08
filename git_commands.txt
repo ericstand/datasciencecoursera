@@ -36,3 +36,12 @@ $ git commit
 ## you can use the -a option on git commit
 $ git commit -a -m "skip staging, committing directly for working dir."
 ## this is faster by saving a step.
+
+## if you are going to remove a file ($ rm filename)
+## it will not show in the working directory, 
+## but it's still in the stating area if you had it tracked
+## with an earlier add ($ git add filename)
+## The git status shows it as deleted: filename
+## until you run a 
+$ git rm filename
+## to remove it from staging
